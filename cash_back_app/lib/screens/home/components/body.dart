@@ -1,7 +1,10 @@
-import '../../../constants.dart';
+import 'package:cash_back_app/screens/home/components/sports.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import './search_box.dart';
+import './title.dart';
+import './technologys.dart';
+
 
 class Body extends StatelessWidget {
   @override
@@ -12,6 +15,10 @@ class Body extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           SearchBox(size: size),
+          TitleWithMoreBtn(title: "Sports", press: () {}),
+          Sports(),
+          TitleWithMoreBtn(title: "Technologies", press: () {}),
+          Technologies(),
         ],
       ),
     );
