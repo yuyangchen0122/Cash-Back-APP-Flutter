@@ -1,5 +1,6 @@
 import 'package:cash_back_app/constants.dart';
 import 'package:cash_back_app/screens/home/home-screen.dart';
+import './screens/users/login/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           body2: TextStyle(color: kTertiaryColor),
         )
       ),
-      home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 }
