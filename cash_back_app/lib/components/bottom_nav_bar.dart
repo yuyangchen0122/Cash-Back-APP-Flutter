@@ -54,6 +54,12 @@ class BottomNavBar extends StatelessWidget {
             icon: Icon(Icons.favorite),
             color: kPrimaryColor,
             onPressed: () {
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.person),
+            color: kPrimaryColor,
+            onPressed: () {
               Navigator.push(
                 context, 
                 MaterialPageRoute(
@@ -63,11 +69,6 @@ class BottomNavBar extends StatelessWidget {
                 )
               );
             },
-          ),
-          IconButton(
-            icon: Icon(Icons.person),
-            color: kPrimaryColor,
-            onPressed: () {},
           ),
         ],),
     );
