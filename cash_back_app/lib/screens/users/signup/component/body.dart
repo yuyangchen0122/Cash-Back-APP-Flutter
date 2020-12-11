@@ -7,6 +7,7 @@ import 'package:cash_back_app/screens/users/login/login.dart';
 import 'package:cash_back_app/screens/users/signup/component/or_divider.dart';
 import 'package:cash_back_app/screens/users/signup/component/social_icon.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -29,6 +30,11 @@ class Body extends StatelessWidget {
                 Text(
                   "Sign Up",
                   style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: size.height * 0.03),
+                SvgPicture.asset(
+                  "assets/icons/signup.svg",
+                  height: size.height * 0.35,
                 ),
                 SizedBox(height: size.height * 0.03),
                 RoundedInputField(

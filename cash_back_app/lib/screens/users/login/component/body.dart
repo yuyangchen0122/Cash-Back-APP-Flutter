@@ -4,6 +4,7 @@ import 'package:cash_back_app/screens/users/components/rounded_input_field.dart'
 import 'package:cash_back_app/screens/users/components/rounded_password_field.dart';
 import 'package:cash_back_app/screens/users/signup/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -26,6 +27,11 @@ class Body extends StatelessWidget {
                 Text(
                   "Login",
                   style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: size.height * 0.03),
+                SvgPicture.asset(
+                  "assets/icons/login.svg",
+                  height: size.height * 0.35,
                 ),
                 SizedBox(height: size.height * 0.03),
                 RoundedInputField(
