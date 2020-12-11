@@ -1,3 +1,5 @@
+import 'package:cash_back_app/screens/home/home-screen.dart';
+import 'package:cash_back_app/screens/profile/profile.dart';
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
@@ -32,7 +34,16 @@ class BottomNavBar extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.home),
             color: kPrimaryColor,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute(
+                  builder: (context) {
+                    return HomeScreen();
+                  }
+                )
+              );
+            },
           ),
           IconButton(
             icon: Icon(Icons.credit_card),
@@ -42,7 +53,16 @@ class BottomNavBar extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.favorite),
             color: kPrimaryColor,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute(
+                  builder: (context) {
+                    return ProfileScreen();
+                  }
+                )
+              );
+            },
           ),
           IconButton(
             icon: Icon(Icons.person),

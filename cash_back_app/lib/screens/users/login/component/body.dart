@@ -1,3 +1,4 @@
+import 'package:cash_back_app/screens/home/home-screen.dart';
 import 'package:cash_back_app/screens/users/components/already_have_an_account_acheck.dart';
 import 'package:cash_back_app/screens/users/components/rounded_button.dart';
 import 'package:cash_back_app/screens/users/components/rounded_input_field.dart';
@@ -43,7 +44,16 @@ class Body extends StatelessWidget {
                 ),
                 RoundedButton(
                   text: 'LOGIN',
-                  press: () {},
+                  press: () {
+                    Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return HomeScreen();
+                        }
+                      )
+                    );
+                  },
                 ),
                 SizedBox(height: size.height * 0.03),
                 AlreadyHaveAnAccountCheck(
