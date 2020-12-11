@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           body2: TextStyle(color: kTertiaryColor),
         )
       ),
-      home: LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }
