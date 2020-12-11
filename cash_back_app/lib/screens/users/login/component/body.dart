@@ -1,3 +1,8 @@
+import 'package:cash_back_app/screens/users/components/already_have_an_account_acheck.dart';
+import 'package:cash_back_app/screens/users/components/rounded_button.dart';
+import 'package:cash_back_app/screens/users/components/rounded_input_field.dart';
+import 'package:cash_back_app/screens/users/components/rounded_password_field.dart';
+import 'package:cash_back_app/screens/users/signup/signup.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {
@@ -21,6 +26,31 @@ class Body extends StatelessWidget {
                 Text(
                   "Login",
                   style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: size.height * 0.03),
+                RoundedInputField(
+                  hintText: "Your Email",
+                  onChanged: (value) {},
+                ),
+                RoundedPasswordField(
+                  onChanged: (value) {},
+                ),
+                RoundedButton(
+                  text: 'LOGIN',
+                  press: () {},
+                ),
+                SizedBox(height: size.height * 0.03),
+                AlreadyHaveAnAccountCheck(
+                  press: () {
+                    Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return SignupScreen();
+                        }
+                      )
+                    );
+                  },
                 )
               ],
             ),
